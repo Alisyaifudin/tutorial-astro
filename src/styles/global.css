@@ -9,6 +9,7 @@ body {
     max-width: 80ch;
     padding: 1rem;
     line-height: 1.5;
+    min-height: 100vh;
 }
 
 * {
@@ -53,7 +54,8 @@ h1 {
     text-transform: uppercase;
 }
 
-.nav-links a:hover, a:focus {
+.nav-links a:hover,
+a:focus {
     background-color: #ff9776;
 }
 
@@ -78,4 +80,26 @@ h1 {
     .hamburger {
         display: none;
     }
+}
+
+/* theme */
+.dark body {
+    background-color: #0d0950;
+    color: #fff;
+}
+
+.dark .nav-links a {
+    color: #fff;
+}
+.dark .skill {
+    color: #b9fea8;
+}
+.dark a {
+    color: #e8f6ff;
+}
+.dark .tag {
+    background-color: navy;
+}
+.dark {
+    background-color: #0d0950;
 }
