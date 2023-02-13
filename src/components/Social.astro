@@ -1,0 +1,16 @@
+---
+interface Props {
+	plarform: string;
+	username: string;
+}
+const { plarform, username } = Astro.props;
+---
+<a href={`https://www.${plarform}.com/${username}`}>{plarform}</a>
+<style>
+	a {
+		padding: 0.5rem 1rem;
+		color: white;
+		background-color: #4c1d95;
+		text-decoration: none;
+	}
+</style>

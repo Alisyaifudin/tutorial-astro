@@ -1,0 +1,10 @@
+---
+import { MarkdownInstance } from "astro";
+import type { Props as PostProps } from "../layouts/MarkdownPostLayout.astro";
+interface Props {
+	post: MarkdownInstance<PostProps["frontmatter"]>;
+}
+const { post } = Astro.props;
+---
+
+<li><a href={post.url}>{post.frontmatter.title}</a></li>
